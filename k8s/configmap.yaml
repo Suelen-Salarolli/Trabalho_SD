@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  labels:
+    app: orders-api
+data:
+  DB_HOST: postgres-service
+  DB_PORT: "5432"
+  DB_NAME: orders_db
+  DB_USER: postgres
+  REDIS_HOST: redis-service
+  REDIS_PORT: "6379"
+  PAYMENT_SERVICE_ENABLED: "false"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: app-secret
+  labels:
+    app: orders-api
+type: Opaque
+data:
+  # "postgres" in base64
+  DB_PASSWORD: cG9zdGdyZXM=

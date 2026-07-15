@@ -1,0 +1,4 @@
+com\sistema\distribuido\domain\CreateOrderUseCaseTest$InMemoryIdempotencyStore.class
+com\sistema\distribuido\domain\CreateOrderUseCaseTest$InMemoryOrderRepository.class
+com\sistema\distribuido\domain\CreateOrderUseCaseTest$RecordingMessageBroker.class
+com\sistema\distribuido\domain\CreateOrderUseCaseTest.class
